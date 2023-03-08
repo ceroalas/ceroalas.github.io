@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 1.5em;}
+h3{font-size: 2em;}
+p{font-size: 0.75em;}
+p{line-height: 18px;}
+span {font-weight: bold;}
+span {color: rgb(201, 201, 138);}
+
+header{
+    height: 380px;
+    }
+
+header .titulo{
+    padding-top: 250px;
+    padding-left: 35px;
+    margin: 0;
+    color: white;
+    font-size: 2.8vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    padding-bottom: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagenes/woodtypo.jpg);
+    }
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(76, 43, 226);
+}
+
+header img-container{
+    ,url(/imagenes/JB.jpg);
+}
+
+#estudios{
+    color: white;
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagenes/woodtypo\ light.jpg);
+}
+
+#estudios h2{
+   margin-top: 25px;
+   padding-left: 12px;
+   padding-top: 20px;
+}
+
+#estudios p{
+    padding-left:12px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+#experiencia h2{
+    margin-top: 25px;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+ 
+#experiencia p{
+     padding-left:12px;
+     padding-bottom: 25px;
+}
+
+#experiencia {
+    color: white;
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagenes/woodtypo\ light.jpg);
+}
+
+#contacto h2{
+    color: white;
+}
+
+#contacto{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagenes/woodtypo\ light.jpg);
+    
+    margin-top: 25px;
+    padding-left: 12px;
+    padding-top: 20px;
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    color: white;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 850px){
+    header{
+       width: 100%;
+    }
+
+    header .container{
+        flex-direction: center;
+        justify-content: space-evenly;
+    }
+
+    header nav{
+        flex-direction: column;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #estudios h1{
+        font-size: 5em;
+    }
+
+    #experiencia .container{
+        display: flex;
+        justify-content: left;
+    }
+
+    #experiencia .texto{
+        width: 50%;
+        max-width: 600px;
+        /*text-align: left;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;*/
+    }
+
+    #experiencia h2{
+        margin-top: 0px;
+    }
+    /*
+    #experiencia .img-container{
+        background-image: url("media/somos-proya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }*/
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
